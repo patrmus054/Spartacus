@@ -13,7 +13,7 @@ const occConfig: OccConfig = { backend: { occ: {} } };
 // <meta name="occ-backend-base-url" > is ignored.
 // This in turn breaks the call to the API aspect in public cloud environments
 if (environment.occBaseUrl) {
-  occConfig.backend.occ.baseUrl = environment.occBaseUrl;
+  occConfig.backend.occ.baseUrl = "https://api.csemea-csemeaprod-d13-public.model-t.cc.commerce.ondemand.com/";
 }
 @NgModule({
   declarations: [
